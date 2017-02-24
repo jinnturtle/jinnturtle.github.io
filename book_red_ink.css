@@ -1,0 +1,117 @@
+<style>
+body {background-color: floralwhite; height: 100%;}
+h1, h2, h3, h4, h5, h6 {color: maroon}
+
+div.container {
+	width: 100%;
+	height: 100%;
+	border: 1px solid maroon;
+}
+
+div.header {
+	position: absolute;
+	top: 0;
+	height: 5%;
+	min-height: 50px;
+	padding: 0;
+	left: 0;
+	width: 100%;
+	background-color: antiquewhite;
+	text-align: center;
+	border: 1px solid maroon;
+}
+
+div.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: antiquewhite;
+	text-align: center;
+	border: 1px solid maroon;
+}
+
+div.sidebar_left {
+	position: fixed;
+	top: 5%;
+	left: 0;
+	width: 13%;
+	height: 91%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: floralwhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+}
+
+div.sidebar_right {
+	position: fixed;
+	top: 5%;
+	right: 0;
+	width: 13%;
+	height: 91%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: floralwhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+}
+
+div.sbl_pad {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 13%;
+	height: 5%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: antiquewhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+	text-align: center;
+}
+
+div.sbr_pad {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 13%;
+	height: 5%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: antiquewhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+	text-align: center;
+}
+
+p::first-letter {
+	font-weight: bold;
+	color: maroon;
+}
+
+p.no_deco::first-letter {
+	font-weight: normal;
+	color: black;
+}
+
+p.sep {
+	text-align: center;
+	color: maroon;
+}
+
+p.sep::first-letter {
+	font-weight: normal;
+}
+
+article {
+//	float: right;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	max-width: 600px;
+	text-align: justify;
+	padding-bottom: 3em;
+}
+</style>
