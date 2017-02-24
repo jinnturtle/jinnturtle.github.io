@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en";>
+
+<head>
+<style>
+body {background-color: floralwhite; height: 100%;}
+h1, h2, h3, h4, h5, h6 {color: maroon}
+
+div.container {
+	width: 100%;
+	height: 100%;
+	border: 1px solid maroon;
+}
+
+div.header {
+	position: absolute;
+	top: 0;
+	height: 5%;
+	min-height: 50px;
+	padding: 0;
+	left: 0;
+	width: 100%;
+	background-color: antiquewhite;
+	text-align: center;
+	border: 1px solid maroon;
+}
+
+div.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: antiquewhite;
+	text-align: center;
+	border: 1px solid maroon;
+}
+
+div.sidebar_left {
+	position: fixed;
+	top: 5%;
+	left: 0;
+	width: 13%;
+	height: 91%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: floralwhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+}
+
+div.sidebar_right {
+	position: fixed;
+	top: 5%;
+	right: 0;
+	width: 13%;
+	height: 91%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: floralwhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+}
+
+div.sbl_pad {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 13%;
+	height: 5%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: antiquewhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+	text-align: center;
+}
+
+div.sbr_pad {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 13%;
+	height: 5%;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: antiquewhite;
+	border-right: 1px solid maroon;
+	border-left: 1px solid maroon;
+	text-align: center;
+}
+
+p::first-letter {
+	font-weight: bold;
+	color: maroon;
+}
+
+p.no_deco::first-letter {
+	font-weight: normal;
+	color: black;
+}
+
+p.sep {
+	text-align: center;
+	color: maroon;
+}
+
+p.sep::first-letter {
+	font-weight: normal;
+}
+
+article {
+//	float: right;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	max-width: 600px;
+	text-align: justify;
+	padding-bottom: 3em;
+}
+</style>
+</head>
+
+<body>
+<div class="sidebar_left">
+	<p>This could be a navigation menu</p>
+	<ul>
+		<li>item one
+		<li>item two
+		<li>item three
+		<li>item four
+		<li>item five
+	</ul>
+</div>
+
+<div class= "sbl_pad">
+	<p></p>
+	<embed src="deco0.svg" width="50%" type="image/svg+xml"></embed>
+</div>
+
+<div class="sidebar_right">
+	<p>I wonder, what should be put here...</p>
+	<p class="sep">&#10086</p>
+	<p>Not sure what I should place here. I think short paragraphs would look
+	quite nice, separated by some fleurons. If I get a site up one day,
+	some program could generate a feed of text for his sidebar, e.g. recent
+	event, posts, etc.</p>
+	<p class="sep">&#10086</p>
+	<p>I think I should push this document onto github. Would be fun to build
+	a little webpage. On github pages perhaps... sounds like a good idea.</p>
+	<p class="sep">&#10086</p>
+	<p>If today I would have had set out to learn some HTML, CSS and a bit about
+	paragraph decorations - I could call today a success. I was supposed to
+	do other things though. But still, in the bigger picture of things, I think
+	I will call today a success nevertheless.</p>
+</div>
+
+<div class= "sbr_pad">
+	<p></p>
+	<embed src="deco0.svg" width="50%" type="image/svg+xml"></embed>
+</div>
+
+<div class="header">
+	<p class="no_deco">Temp text for header.<p>
+</div>
+<article>
+	<h1>A Little Bit About Me</h1>
+<!--#include file="index.html"-->
+	<p>So this is the space reserved to contain a little information about
+	the marvellous, one and only, me.</p>
+	<p class="sep">&#10086 &#10086 &#10086</p>
+	<p>That will be it, for now. Things to do, (digital) places to be,
+	you know.</p>
+</article>
+
+
+<div class="footer">
+	<p class="no_deco">My HTML Page Footer</p>
+</div>
+</body>
+</html>
