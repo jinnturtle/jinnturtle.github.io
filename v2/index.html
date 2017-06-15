@@ -52,14 +52,14 @@ body {
 </style>
 <body>
 
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" onmouseout="closeNav()">
   <elm href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</elm>
   <elm href="index.html">About</elm>
   <elm href="projects.html">Projects</elm>
   <elm href="contact.html">Contact</elm>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776; open</span>
 
 <script>
 function openNav() {
