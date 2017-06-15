@@ -1,0 +1,45 @@
+== TODO
+=== smartsuit theme
+* [ ] left sidebar navigation
+** [ ] sidebar and links to pages
+** [ ] highlight fade animations
+** [ ] expand on hover
+* [ ] projects page
+** [ ] vertical tabs with name and very short description
+** [ ] fadein/out
+** [ ] descriptions for each project
+** [ ] ? maybe separate games from other projects
+** [ ] screenshots
+*** [ ] gallery app
+**** [ ] navigation arrows
+**** [ ] navigation bullets
+**** [ ] thumbnail preview in the bottom
+* [ ] contacts page
+* [ ] chose a font
+* [ ] figure out how to embed the font
+* [ ] ? think about header, do we need it
+* [ ] ? do we need a hero screen?
+
+=== cyberpunk theme
+=== fantasy theme
+
+== ROADMAP
+* [ ] left sidebal navigation
+** [ ] sidebar and links to pages
+** [ ] highlight fade animations
+** [ ] expand on hover
+* [ ] projects page
+** [ ] vertical tabs with name and very short description
+** [ ] fadein/out
+** [ ] descriptions for each project
+** [ ] ? maybe separate games from other projects
+* [ ] contacts page
+* [ ] chose a font
+* [ ] figure out how to embed the font
+* [ ] ? think about header, do we need it
+* [ ] ? do we need a hero screen?
+* [ ] screenshots in projects page
+** [ ] gallery app
+*** [ ] navigation arrows
+*** [ ] navigation bullets
+*** [ ] thumbnail preview in the bottom

@@ -1,0 +1,27 @@
+= Personal Homepage
+Somoe notes and ideas on revisiting web-development.
+
+== Theme
+Would be fun to create a few themes, but sould do the first one thoroughly before going to the next one.
+
+. smartsuit: modern tech minimalist
+. fantasy: metal, gem, marble.
+** dominating colors: brown and gold
+** gem decorations: blue and red gems (maybe also green, yellow, purple). Maybe see EVE laser crystal pictures for inspiration.
+** woven gold for scroll bars, arrows, etc
+** gems for bullets, etc. Ainmater ray-reflect on mouseover.
+. cyberpunk: amber, green, cyan; glare/glow
+** glow animation on mousover for some elements.
+
+== Features Summary
+- Navigation sidebar should extend when mouse hovers over a little arrow at the left side of teh webpage. Navigation panes should be animated with fadein/out on hover.
+- Projects preview akin to tabs example in w3. Vertical tabs, fadein/out animations. Should put a very short summary near each project somegow, so something about is visible before clicking on the tab.
+- A gallery application for screenshot preview. Maybe just an element with thumbnails beneath, but consider the idea of a lightbox.
+- Theme switch.
+
+== Sections
+* About me
+* Projects
+** Summary with links to git_hub
+** Separate pages for bigger projects
+* Contacts
