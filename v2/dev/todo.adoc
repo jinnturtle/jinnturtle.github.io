@@ -1,19 +1,19 @@
 == TODO
-=== smartsuit theme
-* [ ] left sidebar navigation
-** [ ] sidebar and links to pages
-** [ ] highlight fade animations
-** [ ] expand on hover
+=== smart-suit theme
+* [x] left sidebar navigation
+** [x] sidebar and links to pages
+** [x] highlight fade animations
+** [x] expand/retract on click
 * [ ] projects page
-** [ ] vertical tabs with name and very short description
-** [ ] fadein/out
-** [ ] descriptions for each project
-** [ ] ? maybe separate games from other projects
-** [ ] screenshots
-*** [ ] gallery app
-**** [ ] navigation arrows
-**** [ ] navigation bullets
-**** [ ] thumbnail preview in the bottom
+** [x] vertical tabs with name and very short description
+** [x] fade-in/out
+** [x] descriptions for each project
+** [ ] teaser screenshot(s)
+* [ ] dedicated pages for bigger projects
+** [ ] gallery app
+*** [ ] navigation arrows
+*** [ ] navigation bullets
+*** [ ] thumbnail preview in the bottom
 * [ ] contacts page
 * [ ] chose a font
 * [ ] figure out how to embed the font
@@ -24,21 +24,22 @@
 === fantasy theme
 
 == ROADMAP
-* [ ] left sidebal navigation
-** [ ] sidebar and links to pages
-** [ ] highlight fade animations
-** [ ] expand on hover
-* [ ] projects page
-** [ ] vertical tabs with name and very short description
-** [ ] fadein/out
-** [ ] descriptions for each project
-** [ ] ? maybe separate games from other projects
+* [x] left sidebar navigation
+** [x] sidebar and links to pages
+** [x] highlight fade animations
+** [x] expand/retract on click
+* [x] projects page
+** [x] vertical tabs with name and very short description
+** [x] fade-in/out
+** [x] descriptions for each project
+* [ ] navigation menu always pushes content and starts open if above certain
+      device screen resolution
 * [ ] contacts page
 * [ ] chose a font
 * [ ] figure out how to embed the font
 * [ ] ? think about header, do we need it
 * [ ] ? do we need a hero screen?
-* [ ] screenshots in projects page
+* [ ] teaser screenshot(s) in projects page
 ** [ ] gallery app
 *** [ ] navigation arrows
 *** [ ] navigation bullets

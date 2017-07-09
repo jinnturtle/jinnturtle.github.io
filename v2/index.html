@@ -15,17 +15,23 @@
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 
-<h1>The Home in the Internet</h1>
-<p>This is home. It might induce an impression of extreme minimalism, but actually the place is under construction at the moment.</p>
+<div id="main">
+    <h1>The Home in the Internet</h1>
+    <p>This is home. It might induce an impression of extreme minimalism, but actually the place is under construction at the moment.</p>
+</div>
 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
+
+window.onload = openNav();
 </script>
 </body>
 </html> 

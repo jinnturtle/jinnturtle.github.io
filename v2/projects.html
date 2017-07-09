@@ -9,7 +9,6 @@
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 
-<div id="main">
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
@@ -18,29 +17,34 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class="tabWrapper">
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Polygon Dogfight')" id="defaultOpen">
-          Polygon Dogfight</button>
-      <button class="tablinks" onclick="openTab(event, 'Breakout')">Breakout</button>
-      <button class="tablinks" onclick="openTab(event, 'Votsod')">Votsod</button>
-    </div>
+<div id="main">
+    <div class="tabWrapper">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Polygon Dogfight')" id="defaultOpen">
+              Polygon Dogfight</button>
+          <button class="tablinks" onclick="openTab(event, 'Breakout')">Breakout</button>
+          <button class="tablinks" onclick="openTab(event, 'Votsod')">Votsod</button>
+        </div>
 
-    <div id="Polygon Dogfight" class="tabcontent">
-      <h3>Polygon Dogfight</h3>
-      <p>Here should be a short description about the Polygon Dogfight phenomenon.</p>
-    </div>
+        <div id="Polygon Dogfight" class="tabcontent">
+          <h3>Polygon Dogfight</h3>
+          <p>Polygon Dogfight is a little game where two players
+          can each take control of a fighter starship in a deadly duel.</p>
+        </div>
 
-    <div id="Breakout" class="tabcontent">
-      <h3>Breakout</h3>
-      <p>Here shoud be a short description about the aptly-named Breakout clone - Breakout.</p> 
-    </div>
+        <div id="Breakout" class="tabcontent">
+          <h3>Breakout</h3>
+          <p>Breakout is heavily inspired by (read - a clone of) the classic game
+          of the same name where the player has to use a ball and a paddle
+          to destroy a wall of bricks in an attempt to get the highscore.</p> 
+        </div>
 
-    <div id="Votsod" class="tabcontent">
-      <h3>Votsod</h3>
-      <p>Here shoud be a short description about the classic roguelike Votsod.</p>
+        <div id="Votsod" class="tabcontent">
+          <h3>Votsod</h3>
+          <p>Votsod is a classic roguelike - an RPG in ASCII graphics that is not
+          meant to be easy and most of it's content is randomly generated.</p>
+        </div>
     </div>
-</div>
 </div>
 
 <script>
@@ -70,6 +74,9 @@ function openTab(evt, tabName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+//start with the nav sidebar open
+window.onload = openNav();
 </script>
 </body>
 </html>
