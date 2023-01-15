@@ -1,0 +1,68 @@
+= Creative Log
+
+== 2023-01-09/15
+
+
+Also made an attempt at item graphics, "complete"
+was not the goal here.
+
+.Sci-fi spaceship ammo
+image::images/stardust/30x120_plasma_charge_green_glow.webp[]
+
+=== Project RPG7 White Shadow
+Spent a couple evenings through the week designing and coding a game project
+I've started just before Christmas last year. Working title: RPG7 White Shadow,
+because it's my 7th attempt of making an RPG.
+
+Goal of project RPG7 is to not throw due to "this is not as perfect as it could
+be", before meeting at least a few criteria of "playability", I'll post a more
+concrete list before the end of the month.
+
+Things done this week::
+* Designed, re-designed and finally implemented the groundwork for the level
+and "terrain" system.
+* Begun designing player and creature control system, and some stuff for
+handling keyboard and mouse input.
+
+.RPG7 game is actually running and showing graphics
+image::images/rpg7/dev_screenshot1_202301151858.webp[]
+
+.RPG7 level terrain system ideas
+image::images/rpg7/game_level_diagram.webp[]
+
+=== New 3D Art Project: Into the Scar of the World
+Started working on a new 3D scene, an idea that has been rattling around in my
+mind ever since the beginning of my hiatus from graphics in 2010-ish.
+
+Saturday took a stylus into my hands for the first time in a decade and with a
+stiff, awkward hand begun sketching (after gulping down the terror of a staring
+at a blank page).
+
+I promised myself that I'd have something usable at the end of an hour, and I
+did. Even if at the time "usable" sounded a bit generous this is in fact
+infinitely better than nothing.
+
+image::images/descent_into_the_scar_of_the_world/1st_sketch.webp[]
+
+Sunday, about 10am in the morning, I opened Blender and made a promise that by
+6pm, I'd be done with the first exploratory experiment into the concept,
+whatever "done" may look like.
+
+I did get carried away learning procedural textures, and needlessly poured half
+of the entire session time into the small crystal inside the lanterns.
+
+image::images/descent_into_the_scar_of_the_world/1st_3d_experiment.webp[]
+
+This is the most complex scene I've made with Blender in my life so far (which
+isn't saying much) and considering I haven't done _any_ procedural texturing
+since about 2009 (never knew much about it to begin with) I'm quite happy with
+what I learned and re-learned this day.
+
+=== Summary
+While it's not much as lots of time went into refreshing my very rusty skills,
+I'm immensely proud of daring to be "good enough", learn from what I don't
+like, and move to the next challenge.
+
+== TODO before 2023-02-01
+* Translate RPG7 minimum requirements list from the mind into tangible reality,
+so accountability is less fluid.
