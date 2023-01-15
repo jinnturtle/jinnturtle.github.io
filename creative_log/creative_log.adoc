@@ -2,9 +2,8 @@
 
 == 2023-01-09/15
 
-
-Also made an attempt at item graphics, "complete"
-was not the goal here.
+Early in the week started playing around a bit with Blender, eventually made an
+attempt at game item graphics, "complete" was not the goal here.
 
 .Sci-fi spaceship ammo
 image::images/stardust/30x120_plasma_charge_green_glow.webp[]
