@@ -1,7 +1,18 @@
 = Creative Log
+:toc:
+
+== 2023-01-16/22
+Was testing out brush creation capabilities in Krita last week and wanted to
+test out the brushes and get a bit more familiar with the software, by Monday
+had a vague idea for part of a painting, but mostly just did random strokes
+until something started taking shape. Probably will be returning to finish this
+sometime soon.
+
+.The city of dreams doesn't sleep
+image::images/city_of_dreams_doesnt_sleep.webp[]
+
 
 == 2023-01-09/15
-
 Early in the week started playing around a bit with Blender, eventually made an
 attempt at game item graphics, "complete" was not the goal here.
 
