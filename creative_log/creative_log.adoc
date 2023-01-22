@@ -11,6 +11,28 @@ sometime soon.
 .The city of dreams doesn't sleep
 image::images/city_of_dreams_doesnt_sleep.webp[]
 
+Wednesday sat down to give the above painting another go, started adding some
+details, then repainting some things and ended up with something I actually
+like. Reluctant to call it done but suppose I will as I feel like moving on.
+Maybe will re-visit the idea some time later.
+Also, since we're calling it done, manned up to sign it and upload to
+https://www.deviantart.com/jinnturtle/art/Old-Horizons-New-945752477[deviantart]
+. 174 views later, nobody went out of their way to say it sucks, and someone
+actually liked it, quite happy with that result!
+
+.Old Horizons New
+image::images/old_horizons_new.webp[]
+
+Sunday managed to sit down and do some systems design and coding for RPG7,
+the character can now be moved with keyboard input, yay!
+link:videos/rpg7_movement.mp4[Here's proof!]
+Still just a POC though ;)
+
+Also big thanks to brother K for the tile graphics contribution!
+
+.Character control system requirements analysis via activity diagram, 1st pass
+image::images/rpg7/creature_control_activity_diagram.webp[]
+
 
 == 2023-01-09/15
 Early in the week started playing around a bit with Blender, eventually made an
