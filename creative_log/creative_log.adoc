@@ -1,6 +1,15 @@
 = Creative Log
 :toc:
 
+== 2023-01-23/29
+
+Thursday worked a bit more on RPG7, made a 1st design pass for the creature
+control system and implemented parts of said design i.e.
+link:videos/rpg7/movement_w_walls.mp4[can't walk through walls anymore]
+(again, but this time more properly implemented).
+
+image:images/rpg7/creature_control_system.webp[]
+
 == 2023-01-16/22
 Was testing out brush creation capabilities in Krita last week and wanted to
 test out the brushes and get a bit more familiar with the software, by Monday
@@ -25,7 +34,7 @@ image::images/old_horizons_new.webp[]
 
 Sunday managed to sit down and do some systems design and coding for RPG7,
 the character can now be moved with keyboard input, yay!
-link:videos/rpg7_movement.mp4[Here's proof!]
+link:videos/rpg7/movement.mp4[Here's proof!]
 Still just a POC though ;)
 
 Also big thanks to brother K for the tile graphics contribution!
