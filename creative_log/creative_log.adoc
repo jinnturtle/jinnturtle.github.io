@@ -10,6 +10,12 @@ link:videos/rpg7/movement_w_walls.mp4[can't walk through walls anymore]
 
 image:images/rpg7/creature_control_system.webp[]
 
+Friday managed to put in some more work into level object interaction system
+for RPG7, and the groundwork is done, which marks completion of `v0.0.2` for
+`prototype_1` yay!
+
+image:images/rpg7/creature_interaction_fundaments_screenshot.webp[]
+
 == 2023-01-16/22
 Was testing out brush creation capabilities in Krita last week and wanted to
 test out the brushes and get a bit more familiar with the software, by Monday
@@ -18,7 +24,7 @@ until something started taking shape. Probably will be returning to finish this
 sometime soon.
 
 .The city of dreams doesn't sleep
-image::images/city_of_dreams_doesnt_sleep.webp[]
+image:images/city_of_dreams_doesnt_sleep.webp[]
 
 Wednesday sat down to give the above painting another go, started adding some
 details, then repainting some things and ended up with something I actually
@@ -30,7 +36,7 @@ https://www.deviantart.com/jinnturtle/art/Old-Horizons-New-945752477[deviantart]
 actually liked it, quite happy with that result!
 
 .Old Horizons New
-image::images/old_horizons_new.webp[]
+image:images/old_horizons_new.webp[]
 
 Sunday managed to sit down and do some systems design and coding for RPG7,
 the character can now be moved with keyboard input, yay!
@@ -40,7 +46,7 @@ Still just a POC though ;)
 Also big thanks to brother K for the tile graphics contribution!
 
 .Character control system requirements analysis via activity diagram, 1st pass
-image::images/rpg7/creature_control_activity_diagram.webp[]
+image:images/rpg7/creature_control_activity_diagram.webp[]
 
 
 == 2023-01-09/15
@@ -48,7 +54,7 @@ Early in the week started playing around a bit with Blender, eventually made an
 attempt at game item graphics, "complete" was not the goal here.
 
 .Sci-fi spaceship ammo
-image::images/stardust/30x120_plasma_charge_green_glow.webp[]
+image:images/stardust/30x120_plasma_charge_green_glow.webp[]
 
 === Project RPG7 White Shadow
 Spent a couple evenings through the week designing and coding a game project
@@ -66,10 +72,10 @@ and "terrain" system.
 handling keyboard and mouse input.
 
 .RPG7 game is actually running and showing graphics
-image::images/rpg7/dev_screenshot1_202301151858.webp[]
+image:images/rpg7/dev_screenshot1_202301151858.webp[]
 
 .RPG7 level terrain system ideas
-image::images/rpg7/game_level_diagram.webp[]
+image:images/rpg7/game_level_diagram.webp[]
 
 === New 3D Art Project: Into the Scar of the World
 Started working on a new 3D scene, an idea that has been rattling around in my
@@ -83,7 +89,7 @@ I promised myself that I'd have something usable at the end of an hour, and I
 did. Even if at the time "usable" sounded a bit generous this is in fact
 infinitely better than nothing.
 
-image::images/descent_into_the_scar_of_the_world/1st_sketch.webp[]
+image:images/descent_into_the_scar_of_the_world/1st_sketch.webp[]
 
 Sunday, about 10am in the morning, I opened Blender and made a promise that by
 6pm, I'd be done with the first exploratory experiment into the concept,
@@ -92,7 +98,7 @@ whatever "done" may look like.
 I did get carried away learning procedural textures, and needlessly poured half
 of the entire session time into the small crystal inside the lanterns.
 
-image::images/descent_into_the_scar_of_the_world/1st_3d_experiment.webp[]
+image:images/descent_into_the_scar_of_the_world/1st_3d_experiment.webp[]
 
 This is the most complex scene I've made with Blender in my life so far (which
 isn't saying much) and considering I haven't done _any_ procedural texturing
