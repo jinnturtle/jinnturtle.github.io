@@ -1,6 +1,19 @@
 = Creative Log
 :toc:
 
+== 2023-04-03/09
+
+Thursday continued development of RPG7, added a second creature type and
+started some initial design on how creature types will be configured in the
+future. If possible the solution will be similar for items and other content
+that has potential for multiple similar configurations, e.g. usable items etc.
+
+.Multiple kinds of creatures on the map
+image:images/rpg7/dev_screenshot_20230406203619.webp[]
+
+.Further iteration on creature control system design
+image:images/rpg7/creature_control_system20230406.webp[]
+
 == 2023-01-23/29
 
 Thursday worked a bit more on RPG7, made a 1st design pass for the creature
