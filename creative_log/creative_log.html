@@ -442,7 +442,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_2023_04_0309">2023-04-03/09</a></li>
+<li><a href="#_2023_04_0309">2023-04-03/09</a>
+<ul class="sectlevel2">
+<li><a href="#_2023_04_07_friday">2023-04-07 Friday</a></li>
+<li><a href="#_2023_04_06_thursday">2023-04-06 Thursday</a></li>
+</ul>
+</li>
 <li><a href="#_2023_01_2329">2023-01-23/29</a></li>
 <li><a href="#_2023_01_1622">2023-01-16/22</a></li>
 <li><a href="#_2023_01_0915">2023-01-09/15</a>
@@ -460,11 +465,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_2023_04_0309">2023-04-03/09</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_2023_04_07_friday">2023-04-07 Friday</h3>
 <div class="paragraph">
-<p>Thursday continued development of RPG7, added a second creature type and
-started some initial design on how creature types will be configured in the
-future. If possible the solution will be similar for items and other content
-that has potential for multiple similar configurations, e.g. usable items etc.</p>
+<p>Further defelopment of RPG7, overhauled how creatures spawn on the map:
+implemented a basic creature spawning framework to make it easier to build a
+database powered spawn-table system later. No user-visible changes though, but
+if anyone&#8217;s realy curious you can see the repo on
+<a href="https://github.com/jinnturtle/RPG7_White_Shadow/commit/a2c7fd521540895d2f8f97d09a1d63194dcc8b3c">github</a>.</p>
+</div>
+<div class="paragraph">
+<p>I did a lot of fun observing and resolving a bug which caused all creatures on
+the map to respond to player keyboard input due to some accidental re-use of
+memory by and uninitialized variable.
+<a href="videos/rpg7/bug_everyone_moves_202304070001-0120.mp4">Wild bug captured on video.</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2023_04_06_thursday">2023-04-06 Thursday</h3>
+<div class="paragraph">
+<p>Resumed development of RPG7, added a second creature type and started some
+initial design on how creature types will be configured in the future. If
+possible the solution will be similar for items and other content that has
+potential for multiple similar configurations, e.g. usable items etc.</p>
 </div>
 <div class="paragraph">
 <div class="title">Multiple kinds of creatures on the map</div>
@@ -473,6 +496,7 @@ that has potential for multiple similar configurations, e.g. usable items etc.</
 <div class="paragraph">
 <div class="title">Further iteration on creature control system design</div>
 <p><span class="image"><img src="images/rpg7/creature_control_system20230406.webp" alt="creature control system20230406"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -656,7 +680,7 @@ so accountability is less fluid.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-04-06 21:06:43 +0100
+Last updated 2023-04-07 19:17:33 +0100
 </div>
 </div>
 </body>
