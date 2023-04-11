@@ -5,7 +5,7 @@
 
 === 2023-04-11 Tuesday
 Some more under-the-hood work for RPG7. Rewrote how tile data loading works,
-also made new tile type configuration more consice and consequentially more
+also made new tile type configuration more concise and consequentially more
 human readable.
 
 Ended up doing and planning quite a bit of work in regards to implementing more
