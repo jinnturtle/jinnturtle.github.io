@@ -1,6 +1,17 @@
 = Creative Log
 :toc:
 
+== 2023-04-10/16
+
+=== 2023-04-11 Tuesday
+Some more under-the-hood work for RPG7. Rewrote how tile data loading works,
+also made new tile type configuration more consice and consequentially more
+human readable.
+
+Ended up doing and planning quite a bit of work in regards to implementing more
+robust mechanisms for data loading and storage, consequentially moved the
+"creature behaviour" update to next milestone.
+
 == 2023-04-03/09
 
 === 2023-04-07 Friday
