@@ -3,6 +3,21 @@
 
 == 2023-04-10/16
 
+=== 2023-04-16 Sunday
+Finally got to reworking how the test level is generated in RPG7, also updated
+the level to showcase some tile rendering and monster behavior features that I'm
+going to be working on next, while also making it easier to represent the level
+in code for quicker iteration.
+
+Only some memory handling cleanup to do before the project qualifies for
+milestone 0.0.3, yay!
+
+.New test level
+image:images/rpg7/rpg7_dev_screenshot_20230416_new_test_map.webp[]
+
+.Simpler test level representation in code
+image:images/rpg7/rpg7_dev_screenshot_20230416_new_test_map_blueprint.webp[]
+
 === 2023-04-11 Tuesday
 Some more under-the-hood work for RPG7. Rewrote how tile data loading works,
 also made new tile type configuration more concise and consequentially more
