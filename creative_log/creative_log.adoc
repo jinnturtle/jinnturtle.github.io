@@ -1,4 +1,5 @@
 = Creative Log
+:stylesheet: log_style.css
 :toc:
 
 == 2023-04-10/16
