@@ -2,6 +2,20 @@
 :stylesheet: log_style.css
 :toc:
 
+== 2023-05-15/21
+Have been learning a bit more of - and about - Inform 7.
+https://github.com/jinnturtle/inform7_projects/tree/main/learning[Currently
+using a publicly accessible repo as I learn and experiment.]
+
+== 2023-05-08/14
+Mostly been learning some Inform 7, it's a domain-specific language and is - or
+is part of, depending on how you look at it - an interactive fiction authoring
+system.  The language has been in the my periphery for quite a while now as I
+find it interesting in how code written in Inform 7 is much more reminiscent of
+plain English prose than most programming languages.
+https://github.com/jinnturtle/inform7_projects/tree/main/learning[Currently
+using a publicly accessible repo as I learn and experiment.]
+
 == 2023-04-10/16
 
 === 2023-04-16 Sunday
