@@ -2,6 +2,10 @@
 :stylesheet: log_style.css
 :toc:
 
+== 2023-05-29/06-04
+Cleaned up darker corners of RPG7 code, which marks milestone 0.0.3, now onwards
+to an actual core gameplay concept - creature behavior.
+
 == 2023-05-15/21
 Have been learning a bit more of - and about - Inform 7.
 https://github.com/jinnturtle/inform7_projects/tree/main/learning[Currently
