@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-26 Thu 16:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tech-Foo</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="vellum_org.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tech-Foo</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org5bc3fd7">1. Intro</a>
+<ul>
+<li><a href="#orgc9b078e">1.1. <span class="todo TODO">TODO</span> Check Quality of Miscellaneous Sections.</a></li>
+<li><a href="#org80f8a6e">1.2. <span class="todo TODO">TODO</span> Collect Notes</a></li>
+<li><a href="#org3d95f5e">1.3. <span class="todo TODO">TODO</span> Include Remaining Topics</a></li>
+<li><a href="#org6965419">1.4. <span class="todo TODO">TODO</span> Scan for Remaining To-Dos.</a></li>
+</ul>
+</li>
+<li><a href="#org7103f1f">2. Assembly and C</a>
+<ul>
+<li><a href="#orgdd1c92b">2.1. Linking the C Runtime With Ld (Dynamically Linked)</a></li>
+</ul>
+</li>
+<li><a href="#org96824e2">3. Bash</a>
+<ul>
+<li><a href="#org19d0993">3.1. Miscellaneous</a></li>
+<li><a href="#org420866c">3.2. String Case Conversions (bash 4.0+)</a></li>
+<li><a href="#orgce830a3">3.3. Replace Character</a></li>
+<li><a href="#org1068ca9">3.4. Compare File Age</a>
+<ul>
+<li><a href="#orgb67291f">3.4.1. <span class="todo TODO">TODO</span> Test the example, typed from memory.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfd6531d">4. Linux Miscellaneous</a>
+<ul>
+<li><a href="#org880c136">4.1. Scan Files For a String</a>
+<ul>
+<li><a href="#org72cdc6b">4.1.1. Grep</a></li>
+<li><a href="#org9bf118b">4.1.2. Ripgrep (a.k.a. Rg)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5bc3fd7" class="outline-2">
+<h2 id="org5bc3fd7"><span class="section-number-2">1.</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This document contains the various snippets of script and code I find useful
+once in a while (or expect to).
+</p>
+
+<p>
+As of 2026-02-26 this page is an early work in progress, just dumping info from
+some notes I have accumulated over time.
+</p>
+</div>
+<div id="outline-container-orgc9b078e" class="outline-3">
+<h3 id="orgc9b078e"><span class="section-number-3">1.1.</span> <span class="todo TODO">TODO</span> Check Quality of Miscellaneous Sections.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Looks a bit cramped, splitting into subsections may be a good idea.
+</p>
+</div>
+</div>
+<div id="outline-container-org80f8a6e" class="outline-3">
+<h3 id="org80f8a6e"><span class="section-number-3">1.2.</span> <span class="todo TODO">TODO</span> Collect Notes</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Most info seems to be in main <code>notes.adoc</code> file, more bits in <code>tech_foo</code>
+directory, think where else.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d95f5e" class="outline-3">
+<h3 id="org3d95f5e"><span class="section-number-3">1.3.</span> <span class="todo TODO">TODO</span> Include Remaining Topics</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Check if "Linux" and "Bash" are done, include remaining topics.
+</p>
+</div>
+</div>
+<div id="outline-container-org6965419" class="outline-3">
+<h3 id="org6965419"><span class="section-number-3">1.4.</span> <span class="todo TODO">TODO</span> Scan for Remaining To-Dos.</h3>
+</div>
+</div>
+<div id="outline-container-org7103f1f" class="outline-2">
+<h2 id="org7103f1f"><span class="section-number-2">2.</span> Assembly and C</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgdd1c92b" class="outline-3">
+<h3 id="orgdd1c92b"><span class="section-number-3">2.1.</span> Linking the C Runtime With Ld (Dynamically Linked)</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-bash">nasm -f elf64 -o my.o my.asm
+ld -o my_exe -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -lc /usr/lib/crt1.o my.o
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><code>-pie</code> : make a PIE (Position Independent Executable, yummy!).</li>
+<li><code>-dynamic-linker &lt;path&gt;</code> : who's gonna execute this executable, otherwise you'll
+encounter something along the lines of "cannot execute: required file not
+found".</li>
+<li><code>-lc</code> : linking in the C library for e.g. <code>__libc_start_main</code>.</li>
+<li><code>/usr/lib/crt1.o</code> : linking together with the C runtime. (that's where the
+<code>_start</code> is, among other things).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org96824e2" class="outline-2">
+<h2 id="org96824e2"><span class="section-number-2">3.</span> Bash</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org19d0993" class="outline-3">
+<h3 id="org19d0993"><span class="section-number-3">3.1.</span> Miscellaneous</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #a06030;">#</span><span style="color: #a06030;">replace spaces in file names
+</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> *; <span style="color: #f8d4c0;">do</span> mv -v <span style="color: #60b960;">"${f}"</span> $(<span style="color: #fa8072;">echo "${f}" | tr ' ' '_'</span>); <span style="color: #f8d4c0;">done</span>
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">regex inverse/negation (e.g. ffmpeg video compression), bash string replacement
+</span><span style="color: #a06030;">#</span><span style="color: #a06030;">INFO probably better to use 'find' for actual tasks like this
+</span><span style="color: #a06030;">#</span><span style="color: #a06030;">WARNING - bad things will happen if filenames have spaces
+</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #60b960;">).*\.mkv$'</span>); <span style="color: #f8d4c0;">do</span> ffmpeg -i ${<span style="color: #fa6060;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #fa6060;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #f8d4c0;">done</span>
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">compile asciidoc, view resulting file in a browser, and delete output
+</span><span style="color: #fa6060;">in</span>=<span style="color: #60b960;">'notes.adoc'</span> <span style="color: #fa6060;">out</span>=<span style="color: #60b960;">'notes.html'</span> <span style="color: #fa6060;">compiler</span>=<span style="color: #60b960;">'asciidoctor'</span> <span style="color: #fa6060;">browser</span>=<span style="color: #60b960;">'vivaldi'</span> bash -c <span style="color: #60b960;">'"$compiler" "$in" -o "$out"; "$browser" "$out"; sleep 1; rm "$out"'</span>
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">extract file name parts from path
+</span><span style="color: #fa6060;">f</span>=<span style="color: #60b960;">'/this/is/a/glorious.file.d.!@#$%^&amp;*()_+/name.ext1.ext2.ext3'</span>;
+
+<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+name.ext1.ext2.ext3
+
+<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%%.*}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+name
+
+<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%.*}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+name.ext1.ext2
+
+<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>##*.}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+ext3
+
+<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>#*.}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+ext1.ext2.ext3
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">compose a command string and execute with eval (includes double-escaped quotes)
+</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">find -maxdepth 1 -type f</span>); <span style="color: #f8d4c0;">do</span> <span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%%.*}; <span style="color: #fa6060;">ftitle</span>=$(<span style="color: #fa8072;">echo $ftitle | tr '_' ' '</span>); <span style="color: #fa6060;">exstr</span>=$(<span style="color: #fa8072;">printf 'kid3-cli -c "set title \\"%s\\"" "%s"\n' "$ftitle" "$f"</span>); <span style="color: #48b8b8;">printf</span> <span style="color: #60b960;">'\n*** %s ***\n'</span> <span style="color: #60b960;">"$exstr"</span>; <span style="color: #48b8b8;">eval</span> $<span style="color: #fa6060;">exstr</span>; <span style="color: #f8d4c0;">done</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org420866c" class="outline-3">
+<h3 id="org420866c"><span class="section-number-3">3.2.</span> String Case Conversions (bash 4.0+)</h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #fa6060;">TST_STR_L</span>=<span style="color: #60b960;">"lowercase test string"</span>
+
+<span style="color: #48b8b8;">echo</span> ${<span style="color: #fa6060;">TST_STR_L</span>^}
+Lowercase test string
+
+$ echo ${<span style="color: #fa6060;">TST_STR_L</span>^^}
+LOWERCASE TEST STRING
+
+$ echo ${<span style="color: #fa6060;">TST_STR_L</span>^^[wcst]}
+loWerCaSe TeST STring
+
+<span style="color: #fa6060;">TST_STR_U</span>=<span style="color: #60b960;">"UPPERCASE TEST STRING"</span>
+
+$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,}"</span>
+uPPERCASE TEST STRING
+
+$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,,}"</span>
+uppercase test string
+
+$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,,[WCST]}"</span>
+UPPERcAsE tEst stRING
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce830a3" class="outline-3">
+<h3 id="orgce830a3"><span class="section-number-3">3.3.</span> Replace Character</h3>
+<div class="outline-text-3" id="text-3-3">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Using bash argument expansion.</label><pre class="src src-bash"><span style="color: #fa6060;">filename</span>=<span style="color: #60b960;">"avoid spaces in file names"</span>
+<span style="color: #fa6060;">filename</span>=${<span style="color: #fa6060;">filename</span>// /_}
+<span style="color: #48b8b8;">echo</span> $<span style="color: #fa6060;">filename</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Using <code>tr</code> (more portable).</label><pre class="src src-bash"><span style="color: #fa6060;">filename</span>=<span style="color: #60b960;">"avoid spaces in file names"</span>
+<span style="color: #fa6060;">filename</span>=$(<span style="color: #fa8072;">echo $filename | tr ' ' '_'</span>)
+<span style="color: #48b8b8;">echo</span> $<span style="color: #fa6060;">filename</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org1068ca9" class="outline-3">
+<h3 id="org1068ca9"><span class="section-number-3">3.4.</span> Compare File Age</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Operators <code>-nt</code> and <code>-ot</code> for <i>newer-than</i> and <i>older-than</i> respectively.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #fa6060;">doc_files</span>=*.org
+
+<span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> ${<span style="color: #fa6060;">doc_files</span>[@]}; <span style="color: #f8d4c0;">do</span>
+    <span style="color: #a06030;"># </span><span style="color: #a06030;">Don't waste time processing unchanged files
+</span>    <span style="color: #f8d4c0;">if</span> [[ <span style="color: #60b960;">"$f"</span> -ot <span style="color: #60b960;">"${f%%.org}.html"</span> ]]; <span style="color: #f8d4c0;">then continue</span>; <span style="color: #f8d4c0;">fi</span>
+
+    <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$f"</span>
+    emacs <span style="color: #60b960;">"$f"</span> --batch -f org-html-export-to-html --kill
+<span style="color: #f8d4c0;">done</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-orgb67291f" class="outline-4">
+<h4 id="orgb67291f"><span class="section-number-4">3.4.1.</span> <span class="todo TODO">TODO</span> Test the example, typed from memory.</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfd6531d" class="outline-2">
+<h2 id="orgfd6531d"><span class="section-number-2">4.</span> Linux Miscellaneous</h2>
+<div class="outline-text-2" id="text-4">
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #a06030;">#</span><span style="color: #a06030;">kill all radios
+</span>rfkill block all (to unblock rfkill unblock all)
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">archive and encrypt
+</span><span style="color: #fa6060;">dirname</span>=<span style="color: #60b960;">"mydir"</span>
+tar -cf - <span style="color: #60b960;">"$dirname"</span> | openssl enc -e -aes256 -pbkdf2 | xz -9 -T0 &gt;&gt; <span style="color: #60b960;">"${dirname}.tar.xz"</span>
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">decrypt archive
+</span><span style="color: #fa6060;">fname</span>=<span style="color: #60b960;">"archive.tar.xz"</span>
+xz --decompress --stdout <span style="color: #60b960;">"$fname"</span> | openssl enc -d -aes256 -pbkdf2 | tar -x -C test1/
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">fix java GUI for non-reparenting window managers, set env var
+</span><span style="color: #48b8b8;">export</span> <span style="color: #fa6060;">_JAVA_AWT_WM_NONREPARENTING</span>=1
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">convert audio files with ffmpeg (mp3 to opus)
+</span><span style="color: #fa6060;">bitrate</span>=80k; <span style="color: #fa6060;">in_ext</span>=mp3; <span style="color: #fa6060;">out_ext</span>=opus; <span style="color: #fa6060;">lib</span>=libopus; <span style="color: #f8d4c0;">for</span> fname<span style="color: #f8d4c0;"> in</span> ./*.<span style="color: #60b960;">"$in_ext"</span>; <span style="color: #f8d4c0;">do</span> ffmpeg -i <span style="color: #60b960;">"$fname"</span> -c:a <span style="color: #60b960;">"$lib"</span> -b:a $<span style="color: #fa6060;">bitrate</span> -af <span style="color: #60b960;">"aresample=async=1:first_pts=0"</span> $(<span style="color: #fa8072;">echo ${fname%.$in_ext}.$bitrate.$out_ext</span>); <span style="color: #f8d4c0;">done</span>
+
+<span style="color: #a06030;">#</span><span style="color: #a06030;">compress video files with ffmpeg
+</span><span style="color: #a06030;">#</span><span style="color: #a06030;">WARNING - make sure files have no spaces or characters bash treats as special
+</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #60b960;">).*\.mkv$'</span>); <span style="color: #f8d4c0;">do</span> ffmpeg -i ${<span style="color: #fa6060;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #fa6060;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #f8d4c0;">done</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-org880c136" class="outline-3">
+<h3 id="org880c136"><span class="section-number-3">4.1.</span> Scan Files For a String</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org72cdc6b" class="outline-4">
+<h4 id="org72cdc6b"><span class="section-number-4">4.1.1.</span> Grep</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<div class="org-src-container">
+<pre class="src src-bash">grep -rn --include=<span style="color: #60b960;">\*</span>.c . -e <span style="color: #60b960;">"// TODO"</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><code>-E</code> use extended regexp.</li>
+<li><code>-e</code> use regexp patterns.</li>
+<li><code>-i</code> ignore case.</li>
+<li><code>--include</code> which files to include in the search.</li>
+<li><code>-l</code> or <code>-L</code> for case.</li>
+<li><code>-n</code> show line number.</li>
+<li><code>-r</code> recursive.</li>
+<li><code>-w</code> whole word.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9bf118b" class="outline-4">
+<h4 id="org9bf118b"><span class="section-number-4">4.1.2.</span> Ripgrep (a.k.a. Rg)</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<div class="org-src-container">
+<pre class="src src-bash">rg -t c -C3 -e <span style="color: #60b960;">"// TODO"</span> .
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><code>-t</code> type (e.g. <code>c</code> for C source files).</li>
+<li><code>-e</code> regexp, similar to extended regexp in <code>grep</code>.</li>
+<li><code>-C&lt;n&gt;</code> context: print &lt;n&gt; number of lines before and after match.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2026-02-26 Thu 16:13</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
