@@ -1,4 +1,4 @@
-/* version: 2.5.0 */
+/* version: 2.5.1 */
 
 html {
     background-color: #fbf0e8;
@@ -42,4 +42,4 @@ code {
 pre.src { margin: 0.5ex 1ex 2ex 1ex; }
 a:link { text-decoration: none; }
 
-#postamble { background-color: #edc
+#postamble { background-color: #edc; }
