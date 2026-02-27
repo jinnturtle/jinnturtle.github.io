@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-02-26 Thu 16:13 -->
+<!-- 2026-02-27 Fri 16:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tech-Foo</title>
@@ -205,7 +205,7 @@
 <ul>
 <li><a href="#orgc9b078e">1.1. <span class="todo TODO">TODO</span> Check Quality of Miscellaneous Sections.</a></li>
 <li><a href="#org80f8a6e">1.2. <span class="todo TODO">TODO</span> Collect Notes</a></li>
-<li><a href="#org3d95f5e">1.3. <span class="todo TODO">TODO</span> Include Remaining Topics</a></li>
+<li><a href="#org5b04ca2">1.3. <span class="todo TODO">TODO</span> Refine Examples.</a></li>
 <li><a href="#org6965419">1.4. <span class="todo TODO">TODO</span> Scan for Remaining To-Dos.</a></li>
 </ul>
 </li>
@@ -216,24 +216,35 @@
 </li>
 <li><a href="#org96824e2">3. Bash</a>
 <ul>
-<li><a href="#org19d0993">3.1. Miscellaneous</a></li>
-<li><a href="#org420866c">3.2. String Case Conversions (bash 4.0+)</a></li>
-<li><a href="#orgce830a3">3.3. Replace Character</a></li>
-<li><a href="#org1068ca9">3.4. Compare File Age</a>
-<ul>
-<li><a href="#orgb67291f">3.4.1. <span class="todo TODO">TODO</span> Test the example, typed from memory.</a></li>
+<li><a href="#org5896ea7">3.1. Miscellaneous</a></li>
+<li><a href="#orgc24482c">3.2. Compose a Command String and Execute With <code>eval</code></a></li>
+<li><a href="#org420866c">3.3. String Case Conversions (bash 4.0+)</a></li>
+<li><a href="#orgce830a3">3.4. Replace Character</a></li>
+<li><a href="#org1068ca9">3.5. Compare File Age</a></li>
 </ul>
 </li>
+<li><a href="#org57d0e0b">4. Linux</a>
+<ul>
+<li><a href="#org58d872e">4.1. Miscellaneous</a></li>
+<li><a href="#org880c136">4.2. Scan Files For a String</a>
+<ul>
+<li><a href="#org72cdc6b">4.2.1. Grep</a></li>
+<li><a href="#org9bf118b">4.2.2. Ripgrep (a.k.a. Rg)</a></li>
 </ul>
 </li>
-<li><a href="#orgfd6531d">4. Linux Miscellaneous</a>
+<li><a href="#orgadebb02">4.3. System</a>
 <ul>
-<li><a href="#org880c136">4.1. Scan Files For a String</a>
-<ul>
-<li><a href="#org72cdc6b">4.1.1. Grep</a></li>
-<li><a href="#org9bf118b">4.1.2. Ripgrep (a.k.a. Rg)</a></li>
+<li><a href="#orgc3276c3">4.3.1. Set Default Font Across System (Debian or Arch Based Distributions)</a></li>
+<li><a href="#orga84975c">4.3.2. Load/Unload Drivers (Lsmod, Modprobe)</a></li>
+<li><a href="#orgee7139c">4.3.3. Reset USB Device</a></li>
 </ul>
 </li>
+<li><a href="#org06e494d">4.4. List All Files of an Installed Packman Package</a></li>
+</ul>
+</li>
+<li><a href="#orgc70badf">5. Miscellaneous</a>
+<ul>
+<li><a href="#orga941eb6">5.1. Download a Website</a></li>
 </ul>
 </li>
 </ul>
@@ -243,13 +254,9 @@
 <h2 id="org5bc3fd7"><span class="section-number-2">1.</span> Intro</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-This document contains the various snippets of script and code I find useful
-once in a while (or expect to).
-</p>
-
-<p>
-As of 2026-02-26 this page is an early work in progress, just dumping info from
-some notes I have accumulated over time.
+This document contains the various snippets of script, code, and knowledge I
+find useful once in a while (or expect to) as memory is not to be trusted with
+the minutia thereof.
 </p>
 </div>
 <div id="outline-container-orgc9b078e" class="outline-3">
@@ -265,16 +272,31 @@ Looks a bit cramped, splitting into subsections may be a good idea.
 <div class="outline-text-3" id="text-1-2">
 <p>
 Most info seems to be in main <code>notes.adoc</code> file, more bits in <code>tech_foo</code>
-directory, think where else.
+directory, some useful things in the raw <code>creative_log.org</code>, think where else.
 </p>
+
+<ul class="org-ul">
+<li>Places <code>[2/3]</code>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> <code>notes.adoc</code></li>
+<li class="on"><code>[X]</code> <code>tech_foo/</code></li>
+<li class="off"><code>[&#xa0;]</code> <code>creative_log.org</code></li>
+</ul></li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org3d95f5e" class="outline-3">
-<h3 id="org3d95f5e"><span class="section-number-3">1.3.</span> <span class="todo TODO">TODO</span> Include Remaining Topics</h3>
+<div id="outline-container-org5b04ca2" class="outline-3">
+<h3 id="org5b04ca2"><span class="section-number-3">1.3.</span> <span class="todo TODO">TODO</span> Refine Examples.</h3>
 <div class="outline-text-3" id="text-1-3">
-<p>
-Check if "Linux" and "Bash" are done, include remaining topics.
-</p>
+<ul class="org-ul">
+<li>Many lines are longer than what fits in the box and require scrolling,
+potential case of longliningitus.
+<ul class="org-ul">
+<li>Check if all the lines really need to be as long.</li>
+<li>CSS may need a tweak.</li>
+<li>Perhaps add the <code>-n</code> flag to listings while you're at it.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="outline-container-org6965419" class="outline-3">
@@ -310,153 +332,171 @@ found".</li>
 <h2 id="org96824e2"><span class="section-number-2">3.</span> Bash</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org19d0993" class="outline-3">
-<h3 id="org19d0993"><span class="section-number-3">3.1.</span> Miscellaneous</h3>
+<div id="outline-container-org5896ea7" class="outline-3">
+<h3 id="org5896ea7"><span class="section-number-3">3.1.</span> Miscellaneous</h3>
 <div class="outline-text-3" id="text-3-1">
 <div class="org-src-container">
-<pre class="src src-bash"><span style="color: #a06030;">#</span><span style="color: #a06030;">replace spaces in file names
-</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> *; <span style="color: #f8d4c0;">do</span> mv -v <span style="color: #60b960;">"${f}"</span> $(<span style="color: #fa8072;">echo "${f}" | tr ' ' '_'</span>); <span style="color: #f8d4c0;">done</span>
+<pre class="src src-bash"><span style="color: #888888;">#</span><span style="color: #888888;">replace spaces in file names
+</span><span style="color: #800000; font-weight: bold;">for</span> f<span style="color: #800000; font-weight: bold;"> in</span> *; <span style="color: #800000; font-weight: bold;">do</span> mv -v <span style="color: #006090;">"${f}"</span> $(<span style="color: #0000a8;">echo "${f}" | tr ' ' '_'</span>); <span style="color: #800000; font-weight: bold;">done</span>
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">regex inverse/negation (e.g. ffmpeg video compression), bash string replacement
-</span><span style="color: #a06030;">#</span><span style="color: #a06030;">INFO probably better to use 'find' for actual tasks like this
-</span><span style="color: #a06030;">#</span><span style="color: #a06030;">WARNING - bad things will happen if filenames have spaces
-</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #60b960;">).*\.mkv$'</span>); <span style="color: #f8d4c0;">do</span> ffmpeg -i ${<span style="color: #fa6060;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #fa6060;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #f8d4c0;">done</span>
+<span style="color: #888888;">#</span><span style="color: #888888;">regex inverse/negation (e.g. ffmpeg video compression), bash string replacement
+</span><span style="color: #888888;">#</span><span style="color: #888888;">INFO probably better to use 'find' for actual tasks like this
+</span><span style="color: #888888;">#</span><span style="color: #888888;">WARNING - bad things will happen if filenames have spaces
+</span><span style="color: #800000; font-weight: bold;">for</span> f<span style="color: #800000; font-weight: bold;"> in</span> $(<span style="color: #0000a8;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #006090;">).*\.mkv$'</span>); <span style="color: #800000; font-weight: bold;">do</span> ffmpeg -i ${<span style="color: #0000A8;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #0000A8;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #800000; font-weight: bold;">done</span>
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">compile asciidoc, view resulting file in a browser, and delete output
-</span><span style="color: #fa6060;">in</span>=<span style="color: #60b960;">'notes.adoc'</span> <span style="color: #fa6060;">out</span>=<span style="color: #60b960;">'notes.html'</span> <span style="color: #fa6060;">compiler</span>=<span style="color: #60b960;">'asciidoctor'</span> <span style="color: #fa6060;">browser</span>=<span style="color: #60b960;">'vivaldi'</span> bash -c <span style="color: #60b960;">'"$compiler" "$in" -o "$out"; "$browser" "$out"; sleep 1; rm "$out"'</span>
+<span style="color: #888888;">#</span><span style="color: #888888;">compile asciidoc, view resulting file in a browser, and delete output
+</span><span style="color: #0000A8;">in</span>=<span style="color: #006090;">'notes.adoc'</span> <span style="color: #0000A8;">out</span>=<span style="color: #006090;">'notes.html'</span> <span style="color: #0000A8;">compiler</span>=<span style="color: #006090;">'asciidoctor'</span> <span style="color: #0000A8;">browser</span>=<span style="color: #006090;">'vivaldi'</span> bash -c <span style="color: #006090;">'"$compiler" "$in" -o "$out"; "$browser" "$out"; sleep 1; rm "$out"'</span>
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">extract file name parts from path
-</span><span style="color: #fa6060;">f</span>=<span style="color: #60b960;">'/this/is/a/glorious.file.d.!@#$%^&amp;*()_+/name.ext1.ext2.ext3'</span>;
+<span style="color: #888888;">#</span><span style="color: #888888;">extract file name parts from path
+</span><span style="color: #0000A8;">f</span>=<span style="color: #006090;">'/this/is/a/glorious.file.d.!@#$%^&amp;*()_+/name.ext1.ext2.ext3'</span>;
 
-<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+<span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>); <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>}; <span style="color: #006090;">echo</span> <span style="color: #006090;">"$ftitle"</span>
 name.ext1.ext2.ext3
 
-<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%%.*}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+<span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>); <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>%%.*}; <span style="color: #006090;">echo</span> <span style="color: #006090;">"$ftitle"</span>
 name
 
-<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%.*}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+<span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>); <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>%.*}; <span style="color: #006090;">echo</span> <span style="color: #006090;">"$ftitle"</span>
 name.ext1.ext2
 
-<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>##*.}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+<span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>); <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>##*.}; <span style="color: #006090;">echo</span> <span style="color: #006090;">"$ftitle"</span>
 ext3
 
-<span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>#*.}; <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$ftitle"</span>
+<span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>); <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>#*.}; <span style="color: #006090;">echo</span> <span style="color: #006090;">"$ftitle"</span>
 ext1.ext2.ext3
-
-<span style="color: #a06030;">#</span><span style="color: #a06030;">compose a command string and execute with eval (includes double-escaped quotes)
-</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">find -maxdepth 1 -type f</span>); <span style="color: #f8d4c0;">do</span> <span style="color: #fa6060;">fbase</span>=$(<span style="color: #fa8072;">basename $f</span>); <span style="color: #fa6060;">ftitle</span>=${<span style="color: #fa6060;">fbase</span>%%.*}; <span style="color: #fa6060;">ftitle</span>=$(<span style="color: #fa8072;">echo $ftitle | tr '_' ' '</span>); <span style="color: #fa6060;">exstr</span>=$(<span style="color: #fa8072;">printf 'kid3-cli -c "set title \\"%s\\"" "%s"\n' "$ftitle" "$f"</span>); <span style="color: #48b8b8;">printf</span> <span style="color: #60b960;">'\n*** %s ***\n'</span> <span style="color: #60b960;">"$exstr"</span>; <span style="color: #48b8b8;">eval</span> $<span style="color: #fa6060;">exstr</span>; <span style="color: #f8d4c0;">done</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc24482c" class="outline-3">
+<h3 id="orgc24482c"><span class="section-number-3">3.2.</span> Compose a Command String and Execute With <code>eval</code></h3>
+<div class="outline-text-3" id="text-3-2">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr"> 1: </span><span style="color: #800000; font-weight: bold;">for</span> f<span style="color: #800000; font-weight: bold;"> in</span> $(<span style="color: #0000a8;">find -maxdepth 1 -type f</span>); <span style="color: #800000; font-weight: bold;">do</span>
+<span class="linenr"> 2: </span>    <span style="color: #0000A8;">fbase</span>=$(<span style="color: #0000a8;">basename $f</span>);
+<span class="linenr"> 3: </span>    <span style="color: #0000A8;">ftitle</span>=${<span style="color: #0000A8;">fbase</span>%%.*};
+<span class="linenr"> 4: </span>    <span style="color: #0000A8;">ftitle</span>=$(<span style="color: #0000a8;">echo $ftitle | tr '_' ' '</span>);
+<span class="linenr"> 5: </span>
+<span class="linenr"> 6: </span>    <span style="color: #888888;"># </span><span style="color: #888888;">escape char needs to be escaped for eval later thus twice-escaped quotes
+<span class="linenr"> 7: </span></span>    <span style="color: #0000A8;">exstr</span>=$(<span style="color: #0000a8;">printf 'kid3-cli -c "set title \\"%s\\"" "%s"\n' "$ftitle" "$f"</span>);
+<span class="linenr"> 8: </span>    <span style="color: #006090;">printf</span> <span style="color: #006090;">'\n*** %s ***\n'</span> <span style="color: #006090;">"$exstr"</span>;
+<span class="linenr"> 9: </span>
+<span class="linenr">10: </span>    <span style="color: #006090;">eval</span> $<span style="color: #0000A8;">exstr</span>;
+<span class="linenr">11: </span><span style="color: #800000; font-weight: bold;">done</span>
 </pre>
 </div>
 </div>
 </div>
 <div id="outline-container-org420866c" class="outline-3">
-<h3 id="org420866c"><span class="section-number-3">3.2.</span> String Case Conversions (bash 4.0+)</h3>
-<div class="outline-text-3" id="text-3-2">
+<h3 id="org420866c"><span class="section-number-3">3.3.</span> String Case Conversions (bash 4.0+)</h3>
+<div class="outline-text-3" id="text-3-3">
 <div class="org-src-container">
-<pre class="src src-bash"><span style="color: #fa6060;">TST_STR_L</span>=<span style="color: #60b960;">"lowercase test string"</span>
+<pre class="src src-bash"><span style="color: #0000A8;">TST_STR_L</span>=<span style="color: #006090;">"lowercase test string"</span>
 
-<span style="color: #48b8b8;">echo</span> ${<span style="color: #fa6060;">TST_STR_L</span>^}
+<span style="color: #006090;">echo</span> ${<span style="color: #0000A8;">TST_STR_L</span>^}
 Lowercase test string
 
-$ echo ${<span style="color: #fa6060;">TST_STR_L</span>^^}
+$ echo ${<span style="color: #0000A8;">TST_STR_L</span>^^}
 LOWERCASE TEST STRING
 
-$ echo ${<span style="color: #fa6060;">TST_STR_L</span>^^[wcst]}
+$ echo ${<span style="color: #0000A8;">TST_STR_L</span>^^[wcst]}
 loWerCaSe TeST STring
 
-<span style="color: #fa6060;">TST_STR_U</span>=<span style="color: #60b960;">"UPPERCASE TEST STRING"</span>
+<span style="color: #0000A8;">TST_STR_U</span>=<span style="color: #006090;">"UPPERCASE TEST STRING"</span>
 
-$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,}"</span>
+$<span style="color: #0000A8;">echo</span> <span style="color: #006090;">"${TST_STR_U,}"</span>
 uPPERCASE TEST STRING
 
-$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,,}"</span>
+$<span style="color: #0000A8;">echo</span> <span style="color: #006090;">"${TST_STR_U,,}"</span>
 uppercase test string
 
-$<span style="color: #fa6060;">echo</span> <span style="color: #60b960;">"${TST_STR_U,,[WCST]}"</span>
+$<span style="color: #0000A8;">echo</span> <span style="color: #006090;">"${TST_STR_U,,[WCST]}"</span>
 UPPERcAsE tEst stRING
 </pre>
 </div>
 </div>
 </div>
 <div id="outline-container-orgce830a3" class="outline-3">
-<h3 id="orgce830a3"><span class="section-number-3">3.3.</span> Replace Character</h3>
-<div class="outline-text-3" id="text-3-3">
+<h3 id="orgce830a3"><span class="section-number-3">3.4.</span> Replace Character</h3>
+<div class="outline-text-3" id="text-3-4">
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 1: </span>Using bash argument expansion.</label><pre class="src src-bash"><span style="color: #fa6060;">filename</span>=<span style="color: #60b960;">"avoid spaces in file names"</span>
-<span style="color: #fa6060;">filename</span>=${<span style="color: #fa6060;">filename</span>// /_}
-<span style="color: #48b8b8;">echo</span> $<span style="color: #fa6060;">filename</span>
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Using bash argument expansion.</label><pre class="src src-bash"><span style="color: #0000A8;">filename</span>=<span style="color: #006090;">"avoid spaces in file names"</span>
+<span style="color: #0000A8;">filename</span>=${<span style="color: #0000A8;">filename</span>// /_}
+<span style="color: #006090;">echo</span> $<span style="color: #0000A8;">filename</span>
 </pre>
 </div>
 
 <div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 2: </span>Using <code>tr</code> (more portable).</label><pre class="src src-bash"><span style="color: #fa6060;">filename</span>=<span style="color: #60b960;">"avoid spaces in file names"</span>
-<span style="color: #fa6060;">filename</span>=$(<span style="color: #fa8072;">echo $filename | tr ' ' '_'</span>)
-<span style="color: #48b8b8;">echo</span> $<span style="color: #fa6060;">filename</span>
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Using <code>tr</code> (more portable).</label><pre class="src src-bash"><span style="color: #0000A8;">filename</span>=<span style="color: #006090;">"avoid spaces in file names"</span>
+<span style="color: #0000A8;">filename</span>=$(<span style="color: #0000a8;">echo $filename | tr ' ' '_'</span>)
+<span style="color: #006090;">echo</span> $<span style="color: #0000A8;">filename</span>
 </pre>
 </div>
 </div>
 </div>
 <div id="outline-container-org1068ca9" class="outline-3">
-<h3 id="org1068ca9"><span class="section-number-3">3.4.</span> Compare File Age</h3>
-<div class="outline-text-3" id="text-3-4">
+<h3 id="org1068ca9"><span class="section-number-3">3.5.</span> Compare File Age</h3>
+<div class="outline-text-3" id="text-3-5">
 <p>
 Operators <code>-nt</code> and <code>-ot</code> for <i>newer-than</i> and <i>older-than</i> respectively.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-bash"><span style="color: #fa6060;">doc_files</span>=*.org
-
-<span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> ${<span style="color: #fa6060;">doc_files</span>[@]}; <span style="color: #f8d4c0;">do</span>
-    <span style="color: #a06030;"># </span><span style="color: #a06030;">Don't waste time processing unchanged files
-</span>    <span style="color: #f8d4c0;">if</span> [[ <span style="color: #60b960;">"$f"</span> -ot <span style="color: #60b960;">"${f%%.org}.html"</span> ]]; <span style="color: #f8d4c0;">then continue</span>; <span style="color: #f8d4c0;">fi</span>
-
-    <span style="color: #48b8b8;">echo</span> <span style="color: #60b960;">"$f"</span>
-    emacs <span style="color: #60b960;">"$f"</span> --batch -f org-html-export-to-html --kill
-<span style="color: #f8d4c0;">done</span>
+<pre class="src src-bash"><span class="linenr">1: </span><span style="color: #0000A8;">doc_files</span>=*.org
+<span class="linenr">2: </span>
+<span class="linenr">3: </span><span style="color: #800000; font-weight: bold;">for</span> f<span style="color: #800000; font-weight: bold;"> in</span> ${<span style="color: #0000A8;">doc_files</span>[@]}; <span style="color: #800000; font-weight: bold;">do</span>
+<span class="linenr">4: </span>    <span style="color: #888888;"># </span><span style="color: #888888;">Don't waste time processing unchanged files
+<span class="linenr">5: </span></span>    <span style="color: #800000; font-weight: bold;">if</span> [[ <span style="color: #006090;">"$f"</span> -ot <span style="color: #006090;">"${f%%.org}.html"</span> ]]; <span style="color: #800000; font-weight: bold;">then continue</span>; <span style="color: #800000; font-weight: bold;">fi</span>
+<span class="linenr">6: </span>
+<span class="linenr">7: </span>    <span style="color: #006090;">echo</span> <span style="color: #006090;">"$f"</span>
+<span class="linenr">8: </span>    emacs <span style="color: #006090;">"$f"</span> --batch -f org-html-export-to-html --kill
+<span class="linenr">9: </span><span style="color: #800000; font-weight: bold;">done</span>
 </pre>
 </div>
 </div>
-<div id="outline-container-orgb67291f" class="outline-4">
-<h4 id="orgb67291f"><span class="section-number-4">3.4.1.</span> <span class="todo TODO">TODO</span> Test the example, typed from memory.</h4>
 </div>
 </div>
-</div>
-<div id="outline-container-orgfd6531d" class="outline-2">
-<h2 id="orgfd6531d"><span class="section-number-2">4.</span> Linux Miscellaneous</h2>
+<div id="outline-container-org57d0e0b" class="outline-2">
+<h2 id="org57d0e0b"><span class="section-number-2">4.</span> Linux</h2>
 <div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org58d872e" class="outline-3">
+<h3 id="org58d872e"><span class="section-number-3">4.1.</span> Miscellaneous</h3>
+<div class="outline-text-3" id="text-4-1">
 <div class="org-src-container">
-<pre class="src src-bash"><span style="color: #a06030;">#</span><span style="color: #a06030;">kill all radios
+<pre class="src src-bash"><span style="color: #888888;">#</span><span style="color: #888888;">kill all radios
 </span>rfkill block all (to unblock rfkill unblock all)
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">archive and encrypt
-</span><span style="color: #fa6060;">dirname</span>=<span style="color: #60b960;">"mydir"</span>
-tar -cf - <span style="color: #60b960;">"$dirname"</span> | openssl enc -e -aes256 -pbkdf2 | xz -9 -T0 &gt;&gt; <span style="color: #60b960;">"${dirname}.tar.xz"</span>
+<span style="color: #888888;">#</span><span style="color: #888888;">archive and encrypt
+</span><span style="color: #0000A8;">dirname</span>=<span style="color: #006090;">"mydir"</span>
+tar -cf - <span style="color: #006090;">"$dirname"</span> | openssl enc -e -aes256 -pbkdf2 | xz -9 -T0 &gt;&gt; <span style="color: #006090;">"${dirname}.tar.xz"</span>
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">decrypt archive
-</span><span style="color: #fa6060;">fname</span>=<span style="color: #60b960;">"archive.tar.xz"</span>
-xz --decompress --stdout <span style="color: #60b960;">"$fname"</span> | openssl enc -d -aes256 -pbkdf2 | tar -x -C test1/
+<span style="color: #888888;">#</span><span style="color: #888888;">decrypt archive
+</span><span style="color: #0000A8;">fname</span>=<span style="color: #006090;">"archive.tar.xz"</span>
+xz --decompress --stdout <span style="color: #006090;">"$fname"</span> | openssl enc -d -aes256 -pbkdf2 | tar -x -C test1/
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">fix java GUI for non-reparenting window managers, set env var
-</span><span style="color: #48b8b8;">export</span> <span style="color: #fa6060;">_JAVA_AWT_WM_NONREPARENTING</span>=1
+<span style="color: #888888;">#</span><span style="color: #888888;">fix java GUI for non-reparenting window managers, set env var
+</span><span style="color: #006090;">export</span> <span style="color: #0000A8;">_JAVA_AWT_WM_NONREPARENTING</span>=1
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">convert audio files with ffmpeg (mp3 to opus)
-</span><span style="color: #fa6060;">bitrate</span>=80k; <span style="color: #fa6060;">in_ext</span>=mp3; <span style="color: #fa6060;">out_ext</span>=opus; <span style="color: #fa6060;">lib</span>=libopus; <span style="color: #f8d4c0;">for</span> fname<span style="color: #f8d4c0;"> in</span> ./*.<span style="color: #60b960;">"$in_ext"</span>; <span style="color: #f8d4c0;">do</span> ffmpeg -i <span style="color: #60b960;">"$fname"</span> -c:a <span style="color: #60b960;">"$lib"</span> -b:a $<span style="color: #fa6060;">bitrate</span> -af <span style="color: #60b960;">"aresample=async=1:first_pts=0"</span> $(<span style="color: #fa8072;">echo ${fname%.$in_ext}.$bitrate.$out_ext</span>); <span style="color: #f8d4c0;">done</span>
+<span style="color: #888888;">#</span><span style="color: #888888;">convert audio files with ffmpeg (mp3 to opus)
+</span><span style="color: #0000A8;">bitrate</span>=80k; <span style="color: #0000A8;">in_ext</span>=mp3; <span style="color: #0000A8;">out_ext</span>=opus; <span style="color: #0000A8;">lib</span>=libopus; <span style="color: #800000; font-weight: bold;">for</span> fname<span style="color: #800000; font-weight: bold;"> in</span> ./*.<span style="color: #006090;">"$in_ext"</span>; <span style="color: #800000; font-weight: bold;">do</span> ffmpeg -i <span style="color: #006090;">"$fname"</span> -c:a <span style="color: #006090;">"$lib"</span> -b:a $<span style="color: #0000A8;">bitrate</span> -af <span style="color: #006090;">"aresample=async=1:first_pts=0"</span> $(<span style="color: #0000a8;">echo ${fname%.$in_ext}.$bitrate.$out_ext</span>); <span style="color: #800000; font-weight: bold;">done</span>
 
-<span style="color: #a06030;">#</span><span style="color: #a06030;">compress video files with ffmpeg
-</span><span style="color: #a06030;">#</span><span style="color: #a06030;">WARNING - make sure files have no spaces or characters bash treats as special
-</span><span style="color: #f8d4c0;">for</span> f<span style="color: #f8d4c0;"> in</span> $(<span style="color: #fa8072;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #60b960;">).*\.mkv$'</span>); <span style="color: #f8d4c0;">do</span> ffmpeg -i ${<span style="color: #fa6060;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #fa6060;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #f8d4c0;">done</span>
+<span style="color: #888888;">#</span><span style="color: #888888;">compress video files with ffmpeg
+</span><span style="color: #888888;">#</span><span style="color: #888888;">WARNING - make sure files have no spaces or characters bash treats as special
+</span><span style="color: #800000; font-weight: bold;">for</span> f<span style="color: #800000; font-weight: bold;"> in</span> $(<span style="color: #0000a8;">ls ./ | rg --pcre2 '^(?!.*\.crf28</span><span style="color: #006090;">).*\.mkv$'</span>); <span style="color: #800000; font-weight: bold;">do</span> ffmpeg -i ${<span style="color: #0000A8;">f</span>} -vcodec libx265 -crf 28 ${<span style="color: #0000A8;">f</span>%.mkv}.x265.crf28.mkv; <span style="color: #800000; font-weight: bold;">done</span>
 </pre>
+</div>
 </div>
 </div>
 <div id="outline-container-org880c136" class="outline-3">
-<h3 id="org880c136"><span class="section-number-3">4.1.</span> Scan Files For a String</h3>
-<div class="outline-text-3" id="text-4-1">
+<h3 id="org880c136"><span class="section-number-3">4.2.</span> Scan Files For a String</h3>
+<div class="outline-text-3" id="text-4-2">
 </div>
 <div id="outline-container-org72cdc6b" class="outline-4">
-<h4 id="org72cdc6b"><span class="section-number-4">4.1.1.</span> Grep</h4>
-<div class="outline-text-4" id="text-4-1-1">
+<h4 id="org72cdc6b"><span class="section-number-4">4.2.1.</span> Grep</h4>
+<div class="outline-text-4" id="text-4-2-1">
 <div class="org-src-container">
-<pre class="src src-bash">grep -rn --include=<span style="color: #60b960;">\*</span>.c . -e <span style="color: #60b960;">"// TODO"</span>
+<pre class="src src-bash">grep -rn --include=<span style="color: #006090;">\*</span>.c . -e <span style="color: #006090;">"// TODO"</span>
 </pre>
 </div>
 
@@ -473,10 +513,10 @@ xz --decompress --stdout <span style="color: #60b960;">"$fname"</span> | openssl
 </div>
 </div>
 <div id="outline-container-org9bf118b" class="outline-4">
-<h4 id="org9bf118b"><span class="section-number-4">4.1.2.</span> Ripgrep (a.k.a. Rg)</h4>
-<div class="outline-text-4" id="text-4-1-2">
+<h4 id="org9bf118b"><span class="section-number-4">4.2.2.</span> Ripgrep (a.k.a. Rg)</h4>
+<div class="outline-text-4" id="text-4-2-2">
 <div class="org-src-container">
-<pre class="src src-bash">rg -t c -C3 -e <span style="color: #60b960;">"// TODO"</span> .
+<pre class="src src-bash">rg -t c -C3 -e <span style="color: #006090;">"// TODO"</span> .
 </pre>
 </div>
 
@@ -488,10 +528,228 @@ xz --decompress --stdout <span style="color: #60b960;">"$fname"</span> | openssl
 </div>
 </div>
 </div>
+<div id="outline-container-orgadebb02" class="outline-3">
+<h3 id="orgadebb02"><span class="section-number-3">4.3.</span> System</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orgc3276c3" class="outline-4">
+<h4 id="orgc3276c3"><span class="section-number-4">4.3.1.</span> Set Default Font Across System (Debian or Arch Based Distributions)</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Updated</td>
+<td class="org-right">2020-03-13</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Modify (or create) the <code>~/.config/fontconfig/fonts.conf</code> file by adding the
+below snippet, <code>Mononoki</code> (<code>monospace</code> type) is used here as example, change for
+the font and type you want to set.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml"><span class="linenr">1: </span><span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #0000a8;">match</span> <span style="color: #0000A8;">target</span>=<span style="color: #006090;">"pattern"</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">2: </span>  <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #0000a8;">test</span> <span style="color: #0000A8;">name</span>=<span style="color: #006090;">"family"</span> <span style="color: #0000A8;">qual</span>=<span style="color: #006090;">"any"</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">3: </span>    <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #0000a8;">string</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span><span style="color: #303030; background-color: #fdf4e8;">monospace</span><span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #303030; background-color: #fdf4e8;">/</span><span style="color: #0000a8;">string</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">4: </span>  <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #303030; background-color: #fdf4e8;">/</span><span style="color: #0000a8;">test</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">5: </span>  <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #0000a8;">edit</span> <span style="color: #0000A8;">binding</span>=<span style="color: #006090;">"strong"</span> <span style="color: #0000A8;">mode</span>=<span style="color: #006090;">"prepend"</span> <span style="color: #0000A8;">name</span>=<span style="color: #006090;">"family"</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">6: </span>    <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #0000a8;">string</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span><span style="color: #303030; background-color: #fdf4e8;">Mononoki</span><span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #303030; background-color: #fdf4e8;">/</span><span style="color: #0000a8;">string</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">7: </span>  <span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #303030; background-color: #fdf4e8;">/</span><span style="color: #0000a8;">edit</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+<span class="linenr">8: </span><span style="color: #303030; background-color: #fdf4e8;">&lt;</span><span style="color: #303030; background-color: #fdf4e8;">/</span><span style="color: #0000a8;">match</span><span style="color: #303030; background-color: #fdf4e8;">&gt;</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga84975c" class="outline-4">
+<h4 id="orga84975c"><span class="section-number-4">4.3.2.</span> Load/Unload Drivers (Lsmod, Modprobe)</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<ul class="org-ul">
+<li><code>lsmod</code> - list modules</li>
+<li><code>modprobe -r &lt;module name&gt;</code> - remove module and all it's dependencies</li>
+<li><code>modprobe &lt;module name&gt;</code> - load module</li>
+<li><code>rmmod</code> - remove module (less gracefull than <code>modprobe -r</code>)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgee7139c" class="outline-4">
+<h4 id="orgee7139c"><span class="section-number-4">4.3.3.</span> Reset USB Device</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Updated</td>
+<td class="org-right">2018-11-09</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Various ways to reset a USB device under Linux and Android.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>Echo values to the special file (sh).</label><pre class="src src-sh"><span style="color: #888888;">#</span><span style="color: #888888;">(change the 1-4.6 to the device needed)
+</span><span style="color: #006090;">echo</span> -n 0 &gt; /sys/bus/usb/devices/1-4.6/authorized
+<span style="color: #006090;">echo</span> -n 1 &gt; /sys/bus/usb/devices/1-4.6/authorized
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>Trigger a re-scan.</label><pre class="src src-sh"><span style="color: #006090;">echo</span> -n 1 &gt; &lt;path to device controlls dir&gt;/rescan
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 5: </span>Rebind the device driver.</label><pre class="src src-bash"><span class="linenr"> 1: </span><span style="color: #888888;">#</span><span style="color: #888888;">!/bin/</span><span style="color: #800000; font-weight: bold;">bash</span><span style="color: #888888;">
+<span class="linenr"> 2: </span></span>
+<span class="linenr"> 3: </span><span style="color: #800000; font-weight: bold;">if</span> [[ $<span style="color: #0000A8;">EUID</span> != 0 ]] ; <span style="color: #800000; font-weight: bold;">then</span>
+<span class="linenr"> 4: </span>    <span style="color: #006090;">echo</span> This must be run as root!
+<span class="linenr"> 5: </span>    <span style="color: #800000; font-weight: bold;">exit</span> 1
+<span class="linenr"> 6: </span><span style="color: #800000; font-weight: bold;">fi</span>
+<span class="linenr"> 7: </span>
+<span class="linenr"> 8: </span><span style="color: #800000; font-weight: bold;">for</span> xhci<span style="color: #800000; font-weight: bold;"> in</span> /sys/bus/pci/drivers/?hci_hcd ; <span style="color: #800000; font-weight: bold;">do</span>
+<span class="linenr"> 9: </span>
+<span class="linenr">10: </span>    <span style="color: #800000; font-weight: bold;">if ! </span><span style="color: #006090;">cd</span> $<span style="color: #0000A8;">xhci</span> ; <span style="color: #800000; font-weight: bold;">then</span>
+<span class="linenr">11: </span>        <span style="color: #006090;">echo</span> Weird error. Failed to change directory to $<span style="color: #0000A8;">xhci</span>
+<span class="linenr">12: </span>        <span style="color: #800000; font-weight: bold;">exit</span> 1
+<span class="linenr">13: </span>    <span style="color: #800000; font-weight: bold;">fi</span>
+<span class="linenr">14: </span>
+<span class="linenr">15: </span>    <span style="color: #006090;">echo</span> Resetting devices from $<span style="color: #0000A8;">xhci</span>...
+<span class="linenr">16: </span>
+<span class="linenr">17: </span>    <span style="color: #800000; font-weight: bold;">for</span> i<span style="color: #800000; font-weight: bold;"> in</span> ????:??:??.? ; <span style="color: #800000; font-weight: bold;">do</span>
+<span class="linenr">18: </span>        <span style="color: #006090;">echo</span> -n <span style="color: #006090;">"$i"</span> &gt; unbind
+<span class="linenr">19: </span>        <span style="color: #006090;">echo</span> -n <span style="color: #006090;">"$i"</span> &gt; bind
+<span class="linenr">20: </span>    <span style="color: #800000; font-weight: bold;">done</span>
+<span class="linenr">21: </span><span style="color: #800000; font-weight: bold;">done</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 6: </span>Re-load the USB driver.</label><pre class="src src-sh"><span style="color: #0000A8;">dname</span>=<span style="color: #006090;">"&lt;driver name&gt;"</span>
+modprobe -r <span style="color: #006090;">"$dname"</span>     <span style="color: #888888;"># </span><span style="color: #888888;">to remove driver
+</span>modprobe <span style="color: #006090;">"$dname"</span>        <span style="color: #888888;"># </span><span style="color: #888888;">to load driver</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 7: </span>Write a program that does it for you.</label><pre class="src src-C"><span class="linenr"> 1: </span><span style="color: #888888;">/* </span><span style="color: #888888;">usbreset -- send a USB port reset to a USB device</span><span style="color: #888888;"> */</span>
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;stdio.h&gt;</span>
+<span class="linenr"> 4: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;unistd.h&gt;</span>
+<span class="linenr"> 5: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;fcntl.h&gt;</span>
+<span class="linenr"> 6: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;errno.h&gt;</span>
+<span class="linenr"> 7: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;sys/ioctl.h&gt;</span>
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span><span style="color: #0000a8;">#include</span> <span style="color: #006090;">&lt;linux/usbdevice_fs.h&gt;</span>
+<span class="linenr">10: </span>
+<span class="linenr">11: </span>
+<span class="linenr">12: </span><span style="color: #a000a0;">int</span> <span style="color: #0000a8;">main</span>(<span style="color: #a000a0;">int</span> <span style="color: #0000A8;">argc</span>, <span style="color: #a000a0;">char</span> **<span style="color: #0000A8;">argv</span>)
+<span class="linenr">13: </span>{
+<span class="linenr">14: </span>    <span style="color: #800000; font-weight: bold;">const</span> <span style="color: #a000a0;">char</span> *<span style="color: #0000A8;">filename</span>;
+<span class="linenr">15: </span>    <span style="color: #a000a0;">int</span> <span style="color: #0000A8;">fd</span>;
+<span class="linenr">16: </span>    <span style="color: #a000a0;">int</span> <span style="color: #0000A8;">rc</span>;
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>    <span style="color: #800000; font-weight: bold;">if</span> (argc != 2) {
+<span class="linenr">19: </span>        fprintf(stderr, <span style="color: #006090;">"Usage: usbreset device-filename\n"</span>);
+<span class="linenr">20: </span>        <span style="color: #800000; font-weight: bold;">return</span> 1;
+<span class="linenr">21: </span>    }
+<span class="linenr">22: </span>    filename = argv[1];
+<span class="linenr">23: </span>
+<span class="linenr">24: </span>    fd = open(filename, O_WRONLY);
+<span class="linenr">25: </span>    <span style="color: #800000; font-weight: bold;">if</span> (fd &lt; 0) {
+<span class="linenr">26: </span>        perror(<span style="color: #006090;">"Error opening output file"</span>);
+<span class="linenr">27: </span>        <span style="color: #800000; font-weight: bold;">return</span> 1;
+<span class="linenr">28: </span>    }
+<span class="linenr">29: </span>
+<span class="linenr">30: </span>    printf(<span style="color: #006090;">"Resetting USB device %s\n"</span>, filename);
+<span class="linenr">31: </span>    rc = ioctl(fd, USBDEVFS_RESET, 0);
+<span class="linenr">32: </span>    <span style="color: #800000; font-weight: bold;">if</span> (rc &lt; 0) {
+<span class="linenr">33: </span>        perror(<span style="color: #006090;">"Error in ioctl"</span>);
+<span class="linenr">34: </span>        <span style="color: #800000; font-weight: bold;">return</span> 1;
+<span class="linenr">35: </span>    }
+<span class="linenr">36: </span>    printf(<span style="color: #006090;">"Reset successful\n"</span>);
+<span class="linenr">37: </span>
+<span class="linenr">38: </span>    close(fd);
+<span class="linenr">39: </span>    <span style="color: #800000; font-weight: bold;">return</span> 0;
+<span class="linenr">40: </span>}
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 8: </span>Unbind via the "unbind" special file.</label><pre class="src src-sh">ls -la /sys/bus/usb/devices/1-0<span style="color: #006090;">\:</span>1.0/a <span style="color: #888888;">#</span><span style="color: #888888;">to find where drives link points to
+</span><span style="color: #888888;"># </span><span style="color: #888888;">it was "driver -&gt; ../../../../../../bus/usb/drivers/hub"
+</span><span style="color: #006090;">echo</span> -n <span style="color: #006090;">"1-0:1.0"</span> &gt; /sys/bus/usb/drivers/hub/unbind
+<span style="color: #006090;">echo</span> -n <span style="color: #006090;">"1-0:1.0"</span> &gt; /sys/bus/usb/drivers/hub/bind
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 9: </span>Trigger USB disable via android <code>setprop</code>.</label><pre class="src src-sh">setprop sys.usb.config=none
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org06e494d" class="outline-3">
+<h3 id="org06e494d"><span class="section-number-3">4.4.</span> List All Files of an Installed Packman Package</h3>
+<div class="outline-text-3" id="text-4-4">
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #0000A8;">pname</span>=<span style="color: #006090;">"&lt;my package name&gt;"</span>
+<span style="color: #800000; font-weight: bold;">for</span> p<span style="color: #800000; font-weight: bold;"> in</span> $(<span style="color: #0000a8;">pacman -Qql "$pname"</span>); <span style="color: #800000; font-weight: bold;">do</span> [ <span style="color: #006090; font-weight: bold;">!</span> -d $<span style="color: #0000A8;">p</span> ] &amp;&amp; [ -x $<span style="color: #0000A8;">p</span> ] &amp;&amp; <span style="color: #006090;">echo</span> $<span style="color: #0000A8;">p</span>; <span style="color: #800000; font-weight: bold;">done</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc70badf" class="outline-2">
+<h2 id="orgc70badf"><span class="section-number-2">5.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orga941eb6" class="outline-3">
+<h3 id="orga941eb6"><span class="section-number-3">5.1.</span> Download a Website</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+How many things get broken depends on the web-site in question, I found it
+useful to grab educational or reference web-sites when I expect to have no
+Internet access for a while.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 10: </span>Wget under Linux</label><pre class="src src-bash">wget <span style="color: #006090;">\</span>
+    --recursive <span style="color: #006090;">\</span>
+    --no-clobber <span style="color: #006090;">\</span>
+    --page-requisites <span style="color: #006090;">\</span>
+    --html-extension <span style="color: #006090;">\</span>
+    --convert-links <span style="color: #006090;">\</span>
+    --restrict-file-names=windows <span style="color: #006090;">\</span>
+    --domains website.org <span style="color: #006090;">\</span>
+    --no-parent <span style="color: #006090;">\</span>
+    www.website.org/tutorials/html/
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2026-02-26 Thu 16:13</p>
+<p class="date">Created: 2026-02-27 Fri 16:18</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
